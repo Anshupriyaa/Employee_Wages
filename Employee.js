@@ -311,3 +311,10 @@ console.log("UC-11 : " + employeePayrollData.toString());
 // Updating the name
 employeePayrollData.name = "John";
 console.log("UC-11 : " + employeePayrollData.toString());
+// Creating another instance with valid data
+try {
+    let newEmployeePayrollData = new EmployeePayrollData(2, "Terrisa", 30000, "F", new Date());
+    console.log("UC-11 : " + newEmployeePayrollData.toString());
+} catch (e) {
+    console.error(e);
+}
